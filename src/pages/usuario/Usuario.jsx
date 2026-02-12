@@ -8,7 +8,7 @@ const Usuario = () => {
       <figure className={s.profilePicture}>
         <img 
           src="https://i.ibb.co/qw2XTBs/andre.png" 
-          alt="Foto de perfil de André Rodry" 
+          alt="Foto de perfil de André Rodry"
         />
       </figure>
 
