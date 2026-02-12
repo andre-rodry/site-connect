@@ -8,7 +8,6 @@ import Voluntariado from "./pages/voluntariado/Voluntariado";
 import Mentoria from "./pages/mentoria/Mentoria";
 import EventosEP from "./pages/eventosEP/EventosEP";
 import Usuario from "./pages/usuario/Usuario";
-import ScreenSizeIndicator from "./ScreenSizeIndicator";
 
 const App = () => {
   return (
