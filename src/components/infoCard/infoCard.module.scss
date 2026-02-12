@@ -1,0 +1,88 @@
+// src/components/infoCard/infoCard.module.scss
+.card {
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+  width: 100%;
+  padding-bottom: 3rem;
+  margin-inline: auto;
+
+  @media (min-width: 768px) {
+    flex-direction: row;
+    padding-bottom: 0;
+  }
+
+  @media (min-width: 992px) {
+    flex-direction: column;
+  }
+
+  &:nth-child(2) {
+    @media (min-width: 1280px) {
+      position: relative;
+
+      &::before,
+      &::after {
+        content: "";
+        position: absolute;
+        top: 50%;
+        transform: translateY(-50%);
+        width: 1px;
+        height: 100%;
+        background-color: #CBCBCB;
+      }
+
+      &::before {
+        left: -2.5rem; 
+      }
+
+      &::after {
+        right: -2.5rem;
+      }
+    }
+  }
+
+  img {
+    margin-inline: auto;
+    border-radius: 10px;
+  }
+
+  .content {
+    display: flex;
+    flex-direction: column;
+    flex: 1;
+    min-height: 100px;
+  }
+
+  h3 {
+    font-size: 1.2rem;
+    color: #122F97;
+    letter-spacing: 0.8px;
+    font-weight: 700;
+    padding-block: 1rem;
+  }
+
+  p {
+    font-size: 0.9rem;
+    letter-spacing: 0.8px;
+    line-height: 1.4;
+    flex-grow: 1;
+  }
+
+  .botao {
+    width: 170px;
+    margin-inline: auto;
+    height: 30px;
+    font-size: 0.9rem;
+    font-weight: 600;
+    color: #FFFFFF;
+    background-color: #205691;
+    border-radius: 10px;
+    margin-top: 2rem;
+    border: none;
+    cursor: pointer;
+
+    &:hover {
+      background-color: #1a4678;
+    }
+  }
+}
