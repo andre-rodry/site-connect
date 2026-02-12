@@ -14,7 +14,6 @@ const App = () => {
   return (
     <>
       <BrowserRouter>
-        <ScreenSizeIndicator />
         <Header />
         
         <main>
