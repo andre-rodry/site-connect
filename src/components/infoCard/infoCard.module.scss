@@ -1,23 +1,26 @@
-// src/components/infoCard/infoCard.module.scss
+@import '../../styles/variables.scss';
+
+
 .card {
   display: flex;
   flex-direction: column;
   gap: 2rem;
   width: 100%;
+  padding-inline: 0.9rem;
   padding-bottom: 3rem;
   margin-inline: auto;
 
-  @media (min-width: 768px) {
+  @media (min-width: $breakpoint-xl) {
     flex-direction: row;
     padding-bottom: 0;
   }
 
-  @media (min-width: 992px) {
+  @media (min-width: $breakpoint-2xl2) {
     flex-direction: column;
   }
 
   &:nth-child(2) {
-    @media (min-width: 1280px) {
+    @media (min-width: $breakpoint-5xl) {
       position: relative;
 
       &::before,
@@ -55,16 +58,16 @@
 
   h3 {
     font-size: 1.2rem;
-    color: #122F97;
-    letter-spacing: 0.8px;
+    color: $color-primary-blue;
+    letter-spacing: $letter-spacing-base;
     font-weight: 700;
     padding-block: 1rem;
   }
 
   p {
     font-size: 0.9rem;
-    letter-spacing: 0.8px;
-    line-height: 1.4;
+    letter-spacing: $letter-spacing-base;
+    line-height: $line-height-p;
     flex-grow: 1;
   }
 
@@ -74,15 +77,15 @@
     height: 30px;
     font-size: 0.9rem;
     font-weight: 600;
-    color: #FFFFFF;
-    background-color: #205691;
+    color: $color-white;
+    background-color: $color-primary-blue;
     border-radius: 10px;
     margin-top: 2rem;
     border: none;
     cursor: pointer;
 
     &:hover {
-      background-color: #1a4678;
+      background-color: darken($color-primary-blue, 8%);
     }
   }
 }

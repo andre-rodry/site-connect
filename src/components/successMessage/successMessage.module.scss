@@ -1,79 +1,70 @@
-// src/components/successMessage/successMessage.module.scss
+@import '../../styles/variables.scss';
+
 
 .overlay {
   position: fixed;
-  top: 0;
-  left: 0;
-  right: 0;
-  bottom: 0;
-  background-color: rgba(0, 0, 0, 0.5);
+  inset: 0;
+  background-color: $color-overlay-dark;
   display: flex;
   justify-content: center;
-  align-items: flex-start;
-  padding-top: 100px;
+  align-items: center;
+  padding: $spacing-overlay-padding;
   z-index: 1000;
-  animation: fadeIn 0.3s ease-in-out;
+  animation: $animation-fade-in;
 }
 
 .messageBox {
-  background: white;
-  border: 2px solid #4CAF50;
-  border-radius: 8px;
-  padding: 20px 40px;
+  background: $color-message-background;
+  border: $message-border-width solid $color-message-border-success;
+  border-radius: $message-border-radius;
+  padding: $spacing-message-padding-mobile;
+  width: 100%;
   display: flex;
+  flex-direction: column;
   align-items: center;
-  gap: 15px;
-  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
-  animation: slideDown 0.4s ease-out;
-}
-
-.iconContainer {
-  display: flex;
-  align-items: center;
-  justify-content: center;
+  text-align: center;
+  gap: $spacing-message-gap;
+  box-shadow: 0 4px 12px $color-message-shadow;
+  animation: $animation-slide-down;
 }
 
 .checkIcon {
-  width: 40px;
-  height: 40px;
-  animation: scaleIn 0.5s ease-out;
+  width: $icon-size-mobile;
+  height: $icon-size-mobile;
+  animation: $animation-scale-in;
+}
+
+.circle {
+  fill: $color-message-success-light;
+  opacity: 0.3;
+}
+
+.path {
+  stroke: $color-message-border-success;
 }
 
 .message {
   margin: 0;
-  font-size: 18px;
-  font-weight: 500;
-  color: #666;
+  font-size: $font-size-message-mobile;
+  font-weight: $font-weight-message;
+  color: $color-message-text;
+  word-break: break-word;
 }
 
-@keyframes fadeIn {
-  from {
-    opacity: 0;
+@media (min-width: 768px) {
+  .messageBox {
+    flex-direction: row;
+    text-align: left;
+    padding: $spacing-message-padding-desktop;
+    max-width: $message-max-width-desktop;
   }
-  to {
-    opacity: 1;
-  }
-}
 
-@keyframes slideDown {
-  from {
-    transform: translateY(-50px);
-    opacity: 0;
+  .checkIcon {
+    width: $icon-size-desktop;
+    height: $icon-size-desktop;
   }
-  to {
-    transform: translateY(0);
-    opacity: 1;
-  }
-}
 
-@keyframes scaleIn {
-  0% {
-    transform: scale(0);
-  }
-  50% {
-    transform: scale(1.2);
-  }
-  100% {
-    transform: scale(1);
+  .message {
+    font-size: $font-size-message-desktop;
   }
 }

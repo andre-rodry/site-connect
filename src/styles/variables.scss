@@ -140,6 +140,73 @@ $button-padding-300: 0.49rem 1.5rem;
 $button-padding-992: 0.80rem 2.5rem;
 
 
+// ======================================================
+//  VARIÁVEIS DO COMPONENTE INFOCARD
+// ======================================================
+
+$color-primary-blue: #205691;
+$color-white: #FFFFFF;
+$letter-spacing-base: 0.8px;
+$line-height-p: 1.5;
+
+$breakpoint-xl: 769px;
+$breakpoint-2xl2: 992px;
+$breakpoint-5xl: 1280px;
+
+
+
+// ======================================================
+//  VARIÁVEIS DO COMPONENTE MESSAGE
+// ======================================================
+
+// ==========================
+//  CORES
+// ==========================
+
+$color-overlay-dark: rgba(0, 0, 0, 0.5);
+$color-message-background: #FFFFFF;
+$color-message-border-success: #4CAF50;
+$color-message-success-light: #90EE90;
+$color-message-text: #666;
+$color-message-shadow: rgba(0, 0, 0, 0.15);
+
+// ==========================
+//  ESPAÇAMENTOS
+// ==========================
+
+$spacing-overlay-padding: 20px;
+$spacing-message-padding-mobile: 20px;
+$spacing-message-padding-desktop: 20px 40px;
+$spacing-message-gap: 15px;
+
+// ==========================
+//  TAMANHOS
+// ==========================
+
+$message-border-radius: 12px;
+$message-border-width: 2px;
+$message-max-width-desktop: 500px;
+
+$icon-size-mobile: 35px;
+$icon-size-desktop: 40px;
+
+// ==========================
+//  TIPOGRAFIA
+// ==========================
+
+$font-size-message-mobile: 16px;
+$font-size-message-desktop: 18px;
+$font-weight-message: 500;
+
+// ==========================
+//  ANIMAÇÕES
+// ==========================
+
+$animation-fade-in: fadeIn 0.3s ease-in-out;
+$animation-slide-down: slideDown 0.4s ease-out;
+$animation-scale-in: scaleIn 0.5s ease-out;
+
+
 
 // ======================================================
 //  SEÇÃO DOAÇÃO
