@@ -1,6 +1,6 @@
 // PaginaInicial.jsx
 import { Link } from 'react-router-dom';
-import s from './PaginaInicial.module.scss';
+import s from './paginaInicial.module.scss';
 
 import imageBannerDesktop from '../../assets/images/images_banner/image_banner_desktop.png';
 import imageBannerMobile from '../../assets/images/images_banner/image_banner_mobile.png';
