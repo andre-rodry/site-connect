@@ -1,68 +1,66 @@
+@import '../../styles/variables.scss';
+
 .container {
   text-align: center;
-  padding: 2rem 0 3.6rem 0;
+  padding: $spacing-container-padding-voluntario;
 
   h1 {
-    font-size: 2rem;
-    color: #205691;
+    font-size: $font-size-heading-voluntario;
+    color: $color-heading-blue-voluntario;
     font-weight: 700;
-    padding-bottom: 2rem;
+    padding-bottom: $spacing-heading-bottom-voluntario;
   }
 }
 
 .cardsContainer {
   display: flex;
   flex-direction: column;
-  gap: 3rem;
+  gap: $spacing-cards-gap-voluntario;
 
-     @media (min-width: 272px) {
-      width: 250px;
-    }
+  @media (min-width: $breakpoint-voluntario-272) {
+    width: $cards-width-voluntario-272;
+  }
 
-      @media (min-width: 346px) {
-      width: 298px;
-    }
+  @media (min-width: $breakpoint-voluntario-346) {
+    width: $cards-width-voluntario-346;
+  }
 
-       @media (min-width: 414px) {
-      width: 350px;
-    }
+  @media (min-width: $breakpoint-voluntario-414) {
+    width: $cards-width-voluntario-414;
+  }
 
-    
-       @media (min-width: 474px) {
-      width: 390px;
-    }
+  @media (min-width: $breakpoint-voluntario-474) {
+    width: $cards-width-voluntario-474;
+  }
 
-    
-       @media (min-width: 544px) {
-      width: 500px;
-    }
+  @media (min-width: $breakpoint-voluntario-544) {
+    width: $cards-width-voluntario-544;
+  }
 
-    
-      @media (min-width: 768px) {
-        width: 730px;
-    }
+  @media (min-width: $breakpoint-voluntario-768) {
+    width: $cards-width-voluntario-768;
+  }
 
-       @media (min-width: 992px) {
-        display: flex;
-        flex-direction: row;
-        width: 930px;
-    }
+  @media (min-width: $breakpoint-voluntario-992) {
+    display: flex;
+    flex-direction: row;
+    width: $cards-width-voluntario-992;
+  }
 
-      @media (min-width: 1058px) {
-        width: 997px;
-    }
+  @media (min-width: $breakpoint-voluntario-1058) {
+    width: $cards-width-voluntario-1058;
+  }
 
-     @media (min-width: 1154px) {
-        width: 1050px;
-    }
+  @media (min-width: $breakpoint-voluntario-1154) {
+    width: $cards-width-voluntario-1154;
+  }
 
-     @media (min-width: 1214px) {
-        width: 1120px;
-    }
+  @media (min-width: $breakpoint-voluntario-1214) {
+    width: $cards-width-voluntario-1214;
+  }
 
-    @media (min-width: 1280px) {
-        width: 1250px;
-        gap: 5rem;
-    }
-
+  @media (min-width: $breakpoint-voluntario-1280) {
+    width: $cards-width-voluntario-1280;
+    gap: $spacing-cards-gap-lg-voluntario;
+  }
 }

@@ -1,12 +1,13 @@
-// footer.module.scss
+@import '../../styles/variables.scss';
+
 .footer {
   text-align: center;
-  background-color: #E9EFF4;
-  padding: 1.2rem 1rem;
+  background-color: $color-background-footer;
+  padding: $spacing-footer-padding;
 
   p {
-    font-weight: 400;
-    font-size: 0.8rem;
-    font-family: Helvetica, sans-serif;
+    font-weight: $font-weight-footer;
+    font-size: $font-size-footer;
+    font-family: $font-family-footer;
   }
 }

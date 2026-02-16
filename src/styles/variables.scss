@@ -1,0 +1,438 @@
+// ======================================================
+//  VARIÁVEIS GLOBAIS
+// ======================================================
+
+// ==========================
+//  CORES GLOBAIS
+// ==========================
+
+$color-primary-blue: #205691;
+$color-button-primary: #FD7267;
+$color-button-hover: #e55e54;
+$color-white: #FAFAFA;
+
+
+// ==========================
+//  FONTES GLOBAIS
+// ==========================
+
+$font-family-helvetica: Helvetica, sans-serif;
+
+
+// ======================================================
+//  PÁGINA INICIAL
+// ======================================================
+
+// ==========================
+//  SPACING
+// ==========================
+
+$spacing-page: 2rem 1rem;
+$spacing-figure-top: 1.2rem;
+$spacing-text-top: 1.2rem;
+$spacing-button-block: 1.2rem;
+$spacing-button-block-md: 1.3rem;
+
+$spacing-gap-metricas-sm: 0.6rem;
+$spacing-gap-metricas-md: 0.8rem;
+$spacing-gap-metrica: 0.2rem;
+
+
+// ==========================
+//  BREAKPOINTS
+// ==========================
+
+$breakpoint-xs: 300px;
+$breakpoint-sm: 358px;
+$breakpoint-md: 409px;
+$breakpoint-md2: 419px;
+$breakpoint-lg: 511px;
+$breakpoint-lg2: 523px;
+$breakpoint-xl: 769px;
+$breakpoint-xl2: 864px;
+$breakpoint-2xl: 958px;
+$breakpoint-2xl2: 992px;
+$breakpoint-3xl: 1104px;
+$breakpoint-4xl: 1212px;
+$breakpoint-5xl: 1280px;
+
+
+// ==========================
+//  MAX WIDTHS
+// ==========================
+
+$max-width-769: 769px;
+$max-width-800: 800px;
+$max-width-900: 900px;
+$max-width-992: 992px;
+$max-width-1104: 1104px;
+$max-width-1212: 1212px;
+$max-width-1280: 1280px;
+
+
+// ==========================
+//  FIGURE
+// ==========================
+
+$figure-max-width-base: 327px;
+$figure-max-width-409: 340px;
+$figure-max-width-511: 390px;
+$figure-max-width-769: 400px;
+$figure-max-width-864: 800px;
+$figure-max-width-992: 600px;
+
+$figure-top-992: -60px;
+$figure-right-992: -40px;
+
+
+// ==========================
+//  CONTENT
+// ==========================
+
+$content-max-width-base: 327px;
+$content-max-width-419: 480px;
+
+
+// ==========================
+//  TIPOGRAFIA
+// ==========================
+
+// Heading
+$font-size-h1-base: 1.6rem;
+$font-size-h1-300: 1.8rem;
+$font-size-h1-358: 2.3rem;
+$font-size-h1-769: 2.6rem;
+$font-size-h1-992: 3.5rem;
+
+// Paragrafo
+$font-size-p-base: 0.850rem;
+$font-size-p-409: 0.975rem;
+$font-size-p-992: 1.2rem;
+
+// Butão
+$font-size-button-base: 0.8rem;
+$font-size-button-300: 0.9rem;
+$font-size-button-992: 0.987rem;
+
+// Metricas
+$font-size-strong-base: 1.3rem;
+$font-size-strong-409: 1.5rem;
+$font-size-strong-992: 2rem;
+
+$font-size-span-base: 0.7rem;
+$font-size-span-409: 0.9rem;
+
+// Altura de linha
+$line-height-h1: 1.3;
+$line-height-p: 1.5;
+
+// Espaçamentos entre letras
+$letter-spacing-base: 0.8px;
+$letter-spacing-span: 0.5px;
+
+
+// ==========================
+//  BOTÃO
+// ==========================
+
+$button-padding-base: 0.45rem 1rem;
+$button-padding-300: 0.49rem 1.5rem;
+$button-padding-992: 0.80rem 2.5rem;
+
+
+
+// ======================================================
+//  SEÇÃO DOAÇÃO
+// ======================================================
+
+$color-heading-blue: #205691;
+
+$spacing-container-padding: 2rem 0 3.6rem 0;
+$spacing-heading-bottom: 2rem;
+$spacing-cards-gap: 3rem;
+$spacing-cards-gap-lg: 5rem;
+
+$font-size-heading: 2rem;
+
+$breakpoint-doacao-272: 272px;
+$breakpoint-doacao-346: 346px;
+$breakpoint-doacao-414: 414px;
+$breakpoint-doacao-474: 474px;
+$breakpoint-doacao-544: 544px;
+$breakpoint-doacao-768: 768px;
+$breakpoint-doacao-992: 992px;
+$breakpoint-doacao-1058: 1058px;
+$breakpoint-doacao-1154: 1154px;
+$breakpoint-doacao-1214: 1214px;
+$breakpoint-doacao-1280: 1280px;
+
+$cards-width-272: 250px;
+$cards-width-346: 298px;
+$cards-width-414: 350px;
+$cards-width-474: 390px;
+$cards-width-544: 500px;
+$cards-width-768: 730px;
+$cards-width-992: 930px;
+$cards-width-1058: 997px;
+$cards-width-1154: 1050px;
+$cards-width-1214: 1120px;
+$cards-width-1280: 1250px;
+
+
+
+// ======================================================
+//  SEÇÃO VOLUNTÁRIO
+// ======================================================
+
+$color-heading-blue-voluntario: #205691;
+
+$spacing-container-padding-voluntario: 2rem 0 3.6rem 0;
+$spacing-heading-bottom-voluntario: 2rem;
+$spacing-cards-gap-voluntario: 3rem;
+$spacing-cards-gap-lg-voluntario: 5rem;
+
+$font-size-heading-voluntario: 2rem;
+
+$breakpoint-voluntario-272: 272px;
+$breakpoint-voluntario-346: 346px;
+$breakpoint-voluntario-414: 414px;
+$breakpoint-voluntario-474: 474px;
+$breakpoint-voluntario-544: 544px;
+$breakpoint-voluntario-768: 768px;
+$breakpoint-voluntario-992: 992px;
+$breakpoint-voluntario-1058: 1058px;
+$breakpoint-voluntario-1154: 1154px;
+$breakpoint-voluntario-1214: 1214px;
+$breakpoint-voluntario-1280: 1280px;
+
+$cards-width-voluntario-272: 250px;
+$cards-width-voluntario-346: 298px;
+$cards-width-voluntario-414: 350px;
+$cards-width-voluntario-474: 390px;
+$cards-width-voluntario-544: 500px;
+$cards-width-voluntario-768: 730px;
+$cards-width-voluntario-992: 930px;
+$cards-width-voluntario-1058: 997px;
+$cards-width-voluntario-1154: 1050px;
+$cards-width-voluntario-1214: 1120px;
+$cards-width-voluntario-1280: 1250px;
+
+
+
+// ======================================================
+//   SEÇÃO MENTORIA
+// ======================================================
+
+$color-heading-blue-mentoria: #205691;
+
+$spacing-container-padding-mentoria: 2rem 0 3.6rem 0;
+$spacing-heading-bottom-mentoria: 2rem;
+$spacing-cards-gap-mentoria: 3rem;
+$spacing-cards-gap-lg-mentoria: 5rem;
+
+$font-size-heading-mentoria: 2rem;
+
+$breakpoint-mentoria-272: 272px;
+$breakpoint-mentoria-346: 346px;
+$breakpoint-mentoria-414: 414px;
+$breakpoint-mentoria-474: 474px;
+$breakpoint-mentoria-544: 544px;
+$breakpoint-mentoria-768: 768px;
+$breakpoint-mentoria-992: 992px;
+$breakpoint-mentoria-1058: 1058px;
+$breakpoint-mentoria-1154: 1154px;
+$breakpoint-mentoria-1214: 1214px;
+$breakpoint-mentoria-1280: 1280px;
+
+$cards-width-mentoria-272: 250px;
+$cards-width-mentoria-346: 298px;
+$cards-width-mentoria-414: 350px;
+$cards-width-mentoria-474: 390px;
+$cards-width-mentoria-544: 500px;
+$cards-width-mentoria-768: 730px;
+$cards-width-mentoria-992: 930px;
+$cards-width-mentoria-1058: 997px;
+$cards-width-mentoria-1154: 1050px;
+$cards-width-mentoria-1214: 1120px;
+$cards-width-mentoria-1280: 1250px;
+
+
+
+// ======================================================
+//  SEÇÃO EVENTOS E PALESTRAS
+// ======================================================
+
+$color-heading-blue-eventos: #205691;
+
+$spacing-container-padding-eventos: 2rem 0 3.6rem 0;
+$spacing-heading-bottom-eventos: 2rem;
+$spacing-cards-gap-eventos: 3rem;
+$spacing-cards-gap-lg-eventos: 5rem;
+
+$font-size-heading-eventos: 2rem;
+
+$breakpoint-eventos-272: 272px;
+$breakpoint-eventos-346: 346px;
+$breakpoint-eventos-414: 414px;
+$breakpoint-eventos-474: 474px;
+$breakpoint-eventos-544: 544px;
+$breakpoint-eventos-768: 768px;
+$breakpoint-eventos-992: 992px;
+$breakpoint-eventos-1058: 1058px;
+$breakpoint-eventos-1154: 1154px;
+$breakpoint-eventos-1214: 1214px;
+$breakpoint-eventos-1280: 1280px;
+
+$cards-width-eventos-272: 250px;
+$cards-width-eventos-346: 298px;
+$cards-width-eventos-414: 350px;
+$cards-width-eventos-474: 390px;
+$cards-width-eventos-544: 500px;
+$cards-width-eventos-768: 730px;
+$cards-width-eventos-992: 930px;
+$cards-width-eventos-1058: 997px;
+$cards-width-eventos-1154: 1050px;
+$cards-width-eventos-1214: 1120px;
+$cards-width-eventos-1280: 1250px;
+
+
+
+// ======================================================
+//  SEÇÃO USUÁRIOS
+// ======================================================
+
+$color-primary-usuarios: #00AAFF;
+$color-success-usuarios: #278733;
+$color-success-light-usuarios: #D4E7D6;
+$color-text-usuarios: #000;
+$color-background-usuarios: #f9f9f9;
+
+$spacing-section-margin: 40px;
+$spacing-section-padding: 20px;
+$spacing-section-gap: 20px;
+$spacing-section-gap-lg: 40px;
+$spacing-h1-bottom: 4px;
+$spacing-em-bottom: 12px;
+$spacing-p-bottom: 16px;
+$spacing-contact-gap: 10px;
+$spacing-contact-gap-lg: 20px;
+$spacing-contact-bottom: 16px;
+$spacing-contact-item-gap: 8px;
+$spacing-interests-gap: 8px;
+$spacing-interest-padding: 6px 12px;
+
+$border-radius-section: 12px;
+$border-radius-profile: 50%;
+$border-radius-interest: 20px;
+
+$section-width: 95%;
+$section-max-width: 902px;
+$profile-width: 180px;
+$profile-width-lg: 220px;
+$profile-padding: 4px;
+$user-info-max-width: 600px;
+$icon-size-usuarios: 16px;
+
+$font-size-h1-usuarios: 22px;
+$font-size-p-usuarios: 14px;
+$font-size-contact-usuarios: 14px;
+$font-size-interest: 12px;
+
+$font-weight-regular-usuarios: 400;
+$font-weight-medium-usuarios: 500;
+$font-weight-bold-usuarios: 700;
+
+$font-family-usuarios: inter;
+
+$line-height-p-usuarios: 1.6;
+
+$breakpoint-usuarios: 902px;
+
+
+
+// ======================================================
+//  HEADER
+// ======================================================
+
+$color-primary-header: #205691;
+$color-white-header: #FFFFFF;
+$color-overlay: rgba(0, 0, 0, 0.5);
+$color-outline-focus: rgba(255, 255, 255, 0.5);
+
+$spacing-header-padding-sm: 0.75rem 1rem;
+$spacing-header-padding-md: 1rem 2rem;
+$spacing-container-gap: 2rem;
+$spacing-nav-gap: 2rem;
+$spacing-nav-gap-lg: 2.5rem;
+$spacing-dropdown-top: calc(100% + 0.5rem);
+$spacing-username-padding: 1rem;
+$spacing-dropdown-item-padding: 0.875rem 1rem;
+$spacing-dropdown-item-padding-sm: 0.75rem 0.875rem;
+$spacing-outline-offset: 2px;
+
+$header-height-sm: 72px;
+$header-height-md: 82px;
+$container-max-width-header: 1280px;
+$logo-height-sm: 40px;
+$logo-height-md: 45px;
+$avatar-size-sm: 45px;
+$avatar-size-md: 50px;
+$avatar-border-width: 2px;
+$dropdown-min-width: 200px;
+$dropdown-min-width-sm: 180px;
+$dropdown-min-width-md: 220px;
+$dropdown-max-width: calc(100vw - 2rem);
+$divider-height: 1px;
+
+$border-radius-avatar: 50%;
+$border-radius-dropdown: 8px;
+
+$font-size-nav: 0.95rem;
+$font-size-nav-lg: 1rem;
+$font-size-username: 0.95rem;
+$font-size-dropdown-item: 0.9rem;
+$font-size-dropdown-item-sm: 0.85rem;
+
+$font-weight-nav: 500;
+$font-weight-username: 600;
+
+$z-index-header: 1000;
+$z-index-overlay: 999;
+$z-index-dropdown: 1000;
+
+$transition-opacity: opacity 0.3s ease;
+$transition-transform: transform 0.2s ease;
+
+$box-shadow-dropdown: 0 4px 12px rgba(0, 0, 0, 0.15);
+
+$breakpoint-header-400: 400px;
+$breakpoint-header-668: 668px;
+$breakpoint-header-669: 669px;
+$breakpoint-header-768: 768px;
+$breakpoint-header-1024: 1024px;
+$breakpoint-header-1280: 1280px;
+
+$outline-focus: 2px solid $color-outline-focus;
+
+$opacity-hover: 0.8;
+$opacity-disabled: 0.5;
+
+$transform-hover: scale(1.05);
+$transform-active: scale(0.98);
+
+$animation-fade-in: fadeIn 0.3s ease;
+$animation-slide-down: slideDown 0.3s ease;
+
+
+
+// ======================================================
+//  FOOTER
+// ======================================================
+
+$color-background-footer: #E9EFF4;
+
+$spacing-footer-padding: 1.2rem 1rem;
+
+$font-size-footer: 0.8rem;
+$font-weight-footer: 400;
+$font-family-footer: Helvetica, sans-serif;

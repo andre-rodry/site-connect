@@ -1,41 +1,43 @@
+@import '../../styles/variables.scss';
+
 .userSection {
-  width: 95%;
-  margin: 40px auto;
-  padding: 20px;
-  border-radius: 12px;
-  background: #f9f9f9;
+  width: $section-width;
+  margin: $spacing-section-margin auto;
+  padding: $spacing-section-padding;
+  border-radius: $border-radius-section;
+  background: $color-background-usuarios;
   display: flex;
   flex-direction: column;
   align-items: center;
-  gap: 20px;
+  gap: $spacing-section-gap;
 
-  @media (min-width: 902px) {
-    max-width: 902px;
+  @media (min-width: $breakpoint-usuarios) {
+    max-width: $section-max-width;
     flex-direction: row;
     align-items: center;
-    gap: 40px;
+    gap: $spacing-section-gap-lg;
   }
 
   .profilePicture {
-    width: 180px;
+    width: $profile-width;
     aspect-ratio: 1 / 1; 
-    border-radius: 50%;
-    padding: 4px;
-    background: #00AAFF;
+    border-radius: $border-radius-profile;
+    padding: $profile-padding;
+    background: $color-primary-usuarios;
 
     display: flex;
     align-items: center;
     justify-content: center;
     flex-shrink: 0;  
 
-    @media (min-width: 902px) {
-      width: 220px;
+    @media (min-width: $breakpoint-usuarios) {
+      width: $profile-width-lg;
     }
 
     img {
       width: 100%;
       height: 100%;
-      border-radius: 50%;
+      border-radius: $border-radius-profile;
       object-fit: cover;
       display: block;
     }
@@ -44,36 +46,36 @@
 
 .userInfo {
   text-align: center;
-  max-width: 600px;
+  max-width: $user-info-max-width;
 
-  @media (min-width: 902px) {
+  @media (min-width: $breakpoint-usuarios) {
     text-align: left;
   }
 
   h1 {
-    color: #000;
-    font-weight: 700;
-    font-family: inter;
-    font-size: 22px;
-    margin-bottom: 4px;
+    color: $color-text-usuarios;
+    font-weight: $font-weight-bold-usuarios;
+    font-family: $font-family-usuarios;
+    font-size: $font-size-h1-usuarios;
+    margin-bottom: $spacing-h1-bottom;
   }
 
   em {
-    color: #278733;
-    font-weight: 500;
-    font-family: inter;
+    color: $color-success-usuarios;
+    font-weight: $font-weight-medium-usuarios;
+    font-family: $font-family-usuarios;
     font-style: normal;
     display: block;
-    margin-bottom: 12px;
+    margin-bottom: $spacing-em-bottom;
   }
 
   p {
-    color: #000;
-    font-weight: 400;
-    font-family: inter;
-    font-size: 14px;
-    line-height: 1.6;
-    margin-bottom: 16px;
+    color: $color-text-usuarios;
+    font-weight: $font-weight-regular-usuarios;
+    font-family: $font-family-usuarios;
+    font-size: $font-size-p-usuarios;
+    line-height: $line-height-p-usuarios;
+    margin-bottom: $spacing-p-bottom;
   }
 }
 
@@ -81,38 +83,38 @@
   display: flex;
   flex-direction: column;
   align-items: center;
-  gap: 10px;
-  margin-bottom: 16px;
+  gap: $spacing-contact-gap;
+  margin-bottom: $spacing-contact-bottom;
 
-  @media (min-width: 902px) {
+  @media (min-width: $breakpoint-usuarios) {
     flex-direction: row;
     justify-content: flex-start;
     align-items: center;
-    gap: 20px;
+    gap: $spacing-contact-gap-lg;
   }
 
   .contactItem {
     display: flex;
     align-items: center;
     justify-content: center;
-    gap: 8px;
+    gap: $spacing-contact-item-gap;
 
-    @media (min-width: 902px) {
+    @media (min-width: $breakpoint-usuarios) {
       justify-content: flex-start;
     }
 
     span,
     a,
     time {
-      font-size: 14px;
-      color: #000;
+      font-size: $font-size-contact-usuarios;
+      color: $color-text-usuarios;
       text-decoration: none;
     }
 
     .icon {
-      width: 16px;
-      height: 16px;
-      color: #000;
+      width: $icon-size-usuarios;
+      height: $icon-size-usuarios;
+      color: $color-text-usuarios;
     }
   }
 }
@@ -121,20 +123,20 @@
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
-  gap: 8px;
+  gap: $spacing-interests-gap;
   padding: 0;
 
-  @media (min-width: 902px) {
+  @media (min-width: $breakpoint-usuarios) {
     justify-content: flex-start;
   }
 
   li {
     list-style: none;
-    background-color: #D4E7D6;
-    color: #278733;
-    font-size: 12px;
-    padding: 6px 12px;
-    border-radius: 20px;
-    font-weight: 500;
+    background-color: $color-success-light-usuarios;
+    color: $color-success-usuarios;
+    font-size: $font-size-interest;
+    padding: $spacing-interest-padding;
+    border-radius: $border-radius-interest;
+    font-weight: $font-weight-medium-usuarios;
   }
 }

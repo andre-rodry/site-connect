@@ -1,28 +1,28 @@
-// header.module.scss
+@import '../../styles/variables.scss';
 
 .header {
-  background-color: #205691;
-  padding: 0.75rem 1rem;
+  background-color: $color-primary-header;
+  padding: $spacing-header-padding-sm;
   position: fixed;
   top: 0;
   left: 0;
   right: 0;
-  z-index: 1000;
-  height: 72px;
+  z-index: $z-index-header;
+  height: $header-height-sm;
 
-  @media (min-width: 768px) {
-    padding: 1rem 2rem;
-    height: 82px;
+  @media (min-width: $breakpoint-header-768) {
+    padding: $spacing-header-padding-md;
+    height: $header-height-md;
   }
 }
 
 .container {
-  max-width: 1280px;
+  max-width: $container-max-width-header;
   margin: 0 auto;
   display: flex;
   align-items: center;
   justify-content: space-between;
-  gap: 2rem;
+  gap: $spacing-container-gap;
 }
 
 .logoLink {
@@ -31,42 +31,42 @@
 }
 
 .logo {
-  height: 40px;
+  height: $logo-height-sm;
   width: auto;
 
-  @media (min-width: 768px) {
-    height: 45px;
+  @media (min-width: $breakpoint-header-768) {
+    height: $logo-height-md;
   }
 }
 
 .nav {
   display: none;
-  gap: 2rem;
+  gap: $spacing-nav-gap;
   
   a {
-    color: #FFFFFF;
-    font-size: 0.95rem;
-    font-weight: 500;
-    transition: opacity 0.3s ease;
+    color: $color-white-header;
+    font-size: $font-size-nav;
+    font-weight: $font-weight-nav;
+    transition: $transition-opacity;
     white-space: nowrap;
 
     &:hover {
-      opacity: 0.8;
+      opacity: $opacity-hover;
     }
 
-    @media (min-width: 1280px) {
-      font-size: 1rem;
+    @media (min-width: $breakpoint-header-1280) {
+      font-size: $font-size-nav-lg;
     }
   }
 
-  @media (min-width: 669px) {
+  @media (min-width: $breakpoint-header-669) {
     display: flex;
     flex: 1;
     justify-content: center;
   }
 
-  @media (min-width: 1280px) {
-    gap: 2.5rem;
+  @media (min-width: $breakpoint-header-1280) {
+    gap: $spacing-nav-gap-lg;
   }
 }
 
@@ -81,37 +81,37 @@
   cursor: pointer;
   display: flex;
   align-items: center;
-  transition: transform 0.2s ease;
+  transition: $transition-transform;
   outline: none;
 
   &:hover {
-    transform: scale(1.05);
+    transform: $transform-hover;
   }
 
   &:active {
-    transform: scale(0.98);
+    transform: $transform-active;
   }
 
   &:focus-visible {
-    outline: 2px solid rgba(255, 255, 255, 0.5);
-    outline-offset: 2px;
-    border-radius: 50%;
+    outline: $outline-focus;
+    outline-offset: $spacing-outline-offset;
+    border-radius: $border-radius-avatar;
   }
 }
 
 .avatar {
-  width: 45px;
-  height: 45px;
-  border-radius: 50%;
-  border: 2px solid white;
+  width: $avatar-size-sm;
+  height: $avatar-size-sm;
+  border-radius: $border-radius-avatar;
+  border: $avatar-border-width solid white;
   object-fit: cover;
   user-select: none;
   -webkit-user-select: none;
   -webkit-touch-callout: none;
 
-  @media (min-width: 768px) {
-    width: 50px;
-    height: 50px;
+  @media (min-width: $breakpoint-header-768) {
+    width: $avatar-size-md;
+    height: $avatar-size-md;
   }
 }
 
@@ -121,9 +121,9 @@
   left: 0;
   right: 0;
   bottom: 0;
-  background-color: rgba(0, 0, 0, 0.5);
-  z-index: 999;
-  animation: fadeIn 0.3s ease;
+  background-color: $color-overlay;
+  z-index: $z-index-overlay;
+  animation: $animation-fade-in;
 }
 
 @keyframes fadeIn {
@@ -137,29 +137,29 @@
 
 .dropdown {
   position: absolute;
-  top: calc(100% + 0.5rem);
+  top: $spacing-dropdown-top;
   right: 0;
-  background-color: #205691;
-  border-radius: 8px;
-  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
-  min-width: 200px;
-  max-width: calc(100vw - 2rem);
-  z-index: 1000;
+  background-color: $color-primary-header;
+  border-radius: $border-radius-dropdown;
+  box-shadow: $box-shadow-dropdown;
+  min-width: $dropdown-min-width;
+  max-width: $dropdown-max-width;
+  z-index: $z-index-dropdown;
   overflow: hidden;
-  animation: slideDown 0.3s ease;
+  animation: $animation-slide-down;
   transform-origin: top right;
 
-  @media (max-width: 400px) {
-    min-width: 180px;
+  @media (max-width: $breakpoint-header-400) {
+    min-width: $dropdown-min-width-sm;
     right: -0.5rem;
   }
 
-  @media (min-width: 768px) {
-    min-width: 220px;
+  @media (min-width: $breakpoint-header-768) {
+    min-width: $dropdown-min-width-md;
   }
 
-  @media (min-width: 1024px) {
-    min-width: 200px;
+  @media (min-width: $breakpoint-header-1024) {
+    min-width: $dropdown-min-width;
   }
 }
 
@@ -175,27 +175,27 @@
 }
 
 .userName {
-  padding: 1rem;
-  font-weight: 600;
-  color: #FFFFFF;
-  font-size: 0.95rem;
+  padding: $spacing-username-padding;
+  font-weight: $font-weight-username;
+  color: $color-white-header;
+  font-size: $font-size-username;
   word-break: break-word;
 }
 
 .dropdownDivider {
-  height: 1px;
-  background-color: #FFFFFF;
+  height: $divider-height;
+  background-color: $color-white-header;
 }
 
 .dropdownItem {
   display: block;
   width: 100%;
-  padding: 0.875rem 1rem;
+  padding: $spacing-dropdown-item-padding;
   background: none;
   border: none;
   text-align: left;
-  color: #FFFFFF;
-  font-size: 0.9rem;
+  color: $color-white-header;
+  font-size: $font-size-dropdown-item;
   cursor: pointer;
   white-space: nowrap;
   overflow: hidden;
@@ -206,20 +206,20 @@
   }
 
   &.disabled {
-    opacity: 0.5;
+    opacity: $opacity-disabled;
     cursor: not-allowed;
   }
 
-  @media (max-width: 400px) {
-    font-size: 0.85rem;
-    padding: 0.75rem 0.875rem;
+  @media (max-width: $breakpoint-header-400) {
+    font-size: $font-size-dropdown-item-sm;
+    padding: $spacing-dropdown-item-padding-sm;
   }
 }
 
 .navMobile {
   display: block;
 
-  @media (min-width: 668px) {
+  @media (min-width: $breakpoint-header-668) {
     display: none;
   }
 }

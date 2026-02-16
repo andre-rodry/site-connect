@@ -1,68 +1,66 @@
+@import '../../styles/variables.scss';
+
 .container {
   text-align: center;
-  padding: 2rem 0 3.6rem 0;
+  padding: $spacing-container-padding-eventos;
   
   h1 {
-    font-size: 2rem;
-    color: #205691;
+    font-size: $font-size-heading-eventos;
+    color: $color-heading-blue-eventos;
     font-weight: 700;
-    padding-bottom: 2rem;
+    padding-bottom: $spacing-heading-bottom-eventos;
   }
 }
 
 .cardsContainer {
   display: flex;
   flex-direction: column;
-  gap: 3rem;
+  gap: $spacing-cards-gap-eventos;
 
-     @media (min-width: 272px) {
-      width: 250px;
-    }
+  @media (min-width: $breakpoint-eventos-272) {
+    width: $cards-width-eventos-272;
+  }
 
-      @media (min-width: 346px) {
-      width: 298px;
-    }
+  @media (min-width: $breakpoint-eventos-346) {
+    width: $cards-width-eventos-346;
+  }
 
-       @media (min-width: 414px) {
-      width: 350px;
-    }
+  @media (min-width: $breakpoint-eventos-414) {
+    width: $cards-width-eventos-414;
+  }
 
-    
-       @media (min-width: 474px) {
-      width: 390px;
-    }
+  @media (min-width: $breakpoint-eventos-474) {
+    width: $cards-width-eventos-474;
+  }
 
-    
-       @media (min-width: 544px) {
-      width: 500px;
-    }
+  @media (min-width: $breakpoint-eventos-544) {
+    width: $cards-width-eventos-544;
+  }
 
-    
-      @media (min-width: 768px) {
-        width: 730px;
-    }
+  @media (min-width: $breakpoint-eventos-768) {
+    width: $cards-width-eventos-768;
+  }
 
-       @media (min-width: 992px) {
-        display: flex;
-        flex-direction: row;
-        width: 930px;
-    }
+  @media (min-width: $breakpoint-eventos-992) {
+    display: flex;
+    flex-direction: row;
+    width: $cards-width-eventos-992;
+  }
 
-      @media (min-width: 1058px) {
-        width: 997px;
-    }
+  @media (min-width: $breakpoint-eventos-1058) {
+    width: $cards-width-eventos-1058;
+  }
 
-     @media (min-width: 1154px) {
-        width: 1050px;
-    }
+  @media (min-width: $breakpoint-eventos-1154) {
+    width: $cards-width-eventos-1154;
+  }
 
-     @media (min-width: 1214px) {
-        width: 1120px;
-    }
+  @media (min-width: $breakpoint-eventos-1214) {
+    width: $cards-width-eventos-1214;
+  }
 
-    @media (min-width: 1280px) {
-        width: 1250px;
-        gap: 5rem;
-    }
-
+  @media (min-width: $breakpoint-eventos-1280) {
+    width: $cards-width-eventos-1280;
+    gap: $spacing-cards-gap-lg-eventos;
+  }
 }
